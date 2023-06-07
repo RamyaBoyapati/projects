@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+  <h:head>
+<title>Admin Login</title>
+ <link href="style.css" rel="stylesheet"></link>
+
+  </h:head>
+       <h:body>
+       
+          <h:form>
+          <center>
+          <h1>Admin Login</h1>
+User Name
+<h:inputText id="u" value="#{admin.userName}"></h:inputText><br/><br/>
+Password
+<h:inputSecret value="#{admin.passWord}" id="p" ></h:inputSecret><br/><br/>
+<h:commandButton action="#{adminDAO.validate(admin)}" value="Login"></h:commandButton>
+              </center>
+         </h:form>
+       </h:body>
+     </html>
