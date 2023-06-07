@@ -1,0 +1,47 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<hr>
+<center><h1>Student Management Project</h1></center>
+<hr>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>  Login Form</title>
+  <style>
+    /* CSS styles for the form */
+  </style>
+</head>
+<body>
+<center>
+<center><h2>Admin Login Form</h2></center>
+  <form action="login.jsp" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <div class="button-group">
+     <button class="signup-button">Signup</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="submit">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="forgot-password-button">Forgot Password</button>
+    </div>
+  </form>
+  </center>
+  
+  <%-- JSP code to retrieve the user input --%>
+  <%
+    String username = request.getParameter("username");
+    String password = request.getParameter("password");
+    
+    // Perform login authentication here
+    
+    // Redirect to appropriate page based on authentication
+  %>
+  
+</body>
+</html>
