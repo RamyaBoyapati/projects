@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+		   <h:body>
+      <h1>Add Customer</h1>
+          <h:form>
+Customer Name:
+<h:inputText value="#{customer.customerName}" /><br /><br />
+Customer PhoneNo:
+<h:inputText  value="#{customer.customerPhoneNo}" /><br /><br />
+Gender:
+<h:inputText value="#{customer.gender}" /><br /><br />
+Address1:
+<h:inputText value="#{customer.address1}" /><br /><br />
+Address2:
+<h:inputText value="#{customer.address2}" /><br /><br />
+Zipcode:
+<h:inputText value="#{customer.zipcode}" /><br /><br />
+City:
+<h:inputText value="#{customer.city}" /><br /><br />
+UserName :
+<h:inputText value="#{customer.userName}" /><br /><br />
+PassCode :
+<h:inputText value="#{customer.passCode}" /><br /><br />
+      <h:commandButton value="Save" action="#{customerDAO.addCustomer(customer)}" />
+            
+      </h:form>
+	</h:body>
+</html>
