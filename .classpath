@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Java8Features"/>
+	<classpathentry kind="src" path="JavaFileAndInputOutputStreams"/>
+	<classpathentry kind="src" path="OperatorsExamples"/>
+	<classpathentry kind="src" path="ClassAndObjectsExamples"/>
+	<classpathentry kind="src" path="MethodesExamples"/>
+	<classpathentry kind="src" path="ConstructorsExamples"/>
+	<classpathentry kind="src" path="InterfacesExample"/>
+	<classpathentry kind="src" path="HibernateExamples"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
